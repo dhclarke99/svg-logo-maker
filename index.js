@@ -10,7 +10,7 @@ const questions = () => {
           },
           {
             type: 'input',
-            name: 'text-color',
+            name: 'textColor',
             message: 'Enter a text color',
           },
           {
@@ -21,7 +21,7 @@ const questions = () => {
           },
           {
             type: 'input',
-            name: 'shape-color',
+            name: 'shapeColor',
             message: 'Enter a shape color',
           },
         
