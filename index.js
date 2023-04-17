@@ -1,14 +1,17 @@
 const inquirer = require('inquirer');
+const maxLengthInputPrompt = require('inquirer-maxlength-input-prompt')
 const generateSvg = require('./lib/generatesvg')
 const fs = require('fs');
 const shapes = require('./lib/shapes')
 
 const questions = () => { 
+  inquirer.registerPrompt('maxlength-input', maxLengthInputPrompt)
     return inquirer.prompt([
         {
-            type: 'input',
+            type: 'maxlength-input',
             name: 'characters',
             message: 'Enter three characters',
+            maxLength: 3,
           },
           {
             type: 'input',
