@@ -31,6 +31,8 @@ const questions = () => {
     ])
     .then((data) => {
 
+      
+
       console.log(generateSvg)
      const svgContent = generateSvg.generateFile(data.shape);
      fs.writeFile("logo.svg", svgContent, (err) =>
