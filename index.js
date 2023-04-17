@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const generateSvg = require('./lib/generatesvg')
 const fs = require('fs');
+const shapes = require('./lib/shapes')
 
 const questions = () => { 
     return inquirer.prompt([
@@ -30,14 +31,14 @@ const questions = () => {
 
     ])
     .then((data) => {
+      shapes.newCircle(data)
 
-      
-
-      console.log(generateSvg)
-     const svgContent = generateSvg.generateFile(data.shape);
+      generateSvg.setShape(data)
+     const svgContent = generateSvg.generateFile(data);
      fs.writeFile("logo.svg", svgContent, (err) =>
      err ? console.log(err) : console.log("success!")
      );
+
 
      
   });
