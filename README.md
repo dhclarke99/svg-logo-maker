@@ -11,7 +11,7 @@ You must have VS Code or some other source code editor installed on your local s
 
 ## Usage
 
-[Walkthrough Video](https://static.fullstack-bootcamp.com/fullstack-ground/module-10/circle.svg)
+[Walkthrough Video](https://drive.google.com/file/d/1Xv5LxX1d6wphGO5wsPM79T4LCUKYiNJe/view)
 
 Clone this repo to your local system and open the repo in VS code. Then, click on the index.js file and open it in your integrated terminal. Run the command "Node Index.js" and a series of prompts will appear. Answer each prompt and click enter to generate the file with your SVG logo.
 
@@ -23,7 +23,6 @@ Clone this repo to your local system and open the repo in VS code. Then, click o
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 To run the test open the shapes.test.js file in your integrated terminal and run the following code 
 
